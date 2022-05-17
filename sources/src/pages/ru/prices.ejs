@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DRK</title>
+    <link type="image/png" rel="icon" href="../../image/icon/favicon.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<%- include('templates/header.ejs') %>
+<div class="bread-crumbs container">
+    <span>Главная</span>
+    <span>Цены</span>
+</div>
+<section class="article">
+    <div class="container">
+        <h2 class="article__title">Стоимость восстановления данных</h2>
+        <div class="article__wrapper article__wrapper--revers">
+            <article class="article__content article__content--big">
+                <p class="article__content-text">Стоимость восстановления данных определяется после экспертной
+                    диагностики и зависит от: </p>
+                <ul class="article__content-list">
+                    <li class="style-square">Вида поврежденного накопителя;</li>
+                    <li class="style-square">Степени повреждения накопителя;</li>
+                    <li class="style-square">Объема восстанавливаемой информации;</li>
+                    <li class="style-square">Необходимости экспресс-обслуживания.</li>
+                </ul>
+                <p>Гарантия результата - оплата по факту, после проверки списка данных. Все этапы работ будут
+                    согласованы с вами, вы не понесете непредвиденных расходов. Большой объем заказов позволяет нам
+                    сохранять выгодные цены.
+                </p>
+            </article>
+            <div class="article__content article__content--small">
+                <div class="article__img article__img--small">
+                    <picture>
+                        <source srcset="../../image/gallery/price.webp 1x, ../../image/gallery/price-2x.webp 2x"
+                                type="image/webp">
+                        <source srcset="../../image/gallery/price.jpg 1x, ../../image/gallery/price-2x.jpg 2x"
+                                type="image/jpg">
+                        <img src="../../image/gallery/price.jpg"
+                             srcset="../../image/gallery/price-2x.jpg 2x" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="table">
+    <div class="container">
+        <table class="table__wrapper">
+            <thead>
+            <tr>
+                <th class="table__content--left table__title">Услуги</th>
+                <th class="table__content--right table__title">Цена в<span class="price"> </span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="table__content table__content--left">
+                    <h4 class="table__content-title">Копия данных</h4>
+                    <p class="table__content-text">Бесплатное копирование восстановленных данных на любой целевой
+                        носитель</p>
+                </td>
+                <td class="table__content table__content--left">
+                    <p class="table__content-num">Бесплатно</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="table__content table__content--left">
+                    <h4 class="table__content-title">Стоимость анализа на стандартный носитель данных</h4>
+                    <p class="table__content-text">Профессиональный анализ носителей данных в лаборатории восстановления
+                        данных, включая предварительные переговоры о ходе повреждения и консультации</p>
+                </td>
+                <td class="table__content table__content--right">
+                    <p class="table__content-num">Бесплатно</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="table__content table__content--left">
+                    <h4 class="table__content-title">Вторая диагностика</h4>
+                    <p class="table__content-text">Профессиональный анализ с существующим первоначальным анализом другой
+                        компании по восстановлению данных, дополнительная информация по этому вопросу по телефону</p>
+                </td>
+                <td class="table__content table__content--right">
+                    <p class="table__content-num">Бесплатно</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="table__content table__content--left">
+                    <h4 class="table__content-title">Экспресс-анализ</h4>
+                    <p class="table__content-text">Максимально быстрый анализ носителя данных/обычно в течение 24 часов,
+                        включая курьерскую экспресс-доставку – в течение ночи</p>
+                </td>
+                <td class="table__content table__content--right">
+                    <p class="table__content-num">по запросу</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="table__content table__content--left">
+                    <h4 class="table__content-title">Восстановление данных с жесткого диска - легкое повреждение</h4>
+                    <p class="table__content-text">Например, неисправная электроника, корректировка прошивки,
+                        неисправная файловая система FAT/NTFS.</p>
+                </td>
+                <td class="table__content table__content--right">
+                    <p class="table__content-num">от <span class="price">150</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="table__content table__content--left">
+                    <h4 class="table__content-title">Восстановление данных с жестких дисков - механические
+                        повреждения</h4>
+                    <p class="table__content-text">Например, дефект в области головок
+                        чтения/записи/подшипников/двигателя/поверхности носителя данных, изменения в зоне
+                        обслуживания</p>
+                </td>
+                <td class="table__content table__content--right">
+                    <p class="table__content-num">от <span class="price">250</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="table__content table__content--left">
+                    <h4 class="table__content-title">Восстановление данных с дисковых массивов RAID</h4>
+                    <p class="table__content-text">например, NAS/сервер с RAID 0,1,5,6,7,10</p>
+                </td>
+                <td class="table__content table__content--right">
+                    <p class="table__content-num">от <span class="price">390</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="table__content table__content--left">
+                    <h4 class="table__content-title">Восстановление данных с флешки - программный дефект</h4>
+                    <p class="table__content-text">например, USB-накопители, карты памяти</p>
+                </td>
+                <td class="table__content table__content--right">
+                    <p class="table__content-num">от <span class="price">150</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="table__content table__content--left">
+                    <h4 class="table__content-title">Восстановление данных с флешки - аппаратный дефект</h4>
+                    <p class="table__content-text">например, USB-накопители, карты памяти</p>
+                </td>
+                <td class="table__content table__content--right">
+                    <p class="table__content-num">от <span class="price">200</span></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="article">
+    <div class="container">
+        <h2 class="article__title">Как узнать точную стоимость восстановления?</h2>
+        <div class="article__wrapper">
+            <article class="article__content article__content--big">
+                <p class="article__content-text">Установить точные фиксированные цены на все виды неисправностей по
+                    разным накопителям и устройствам очень сложно из-за разницы в трудоёмкости работ по различным
+                    моделям. Моделей накопителей существует несколько тысяч, а их неисправностей несколько десятков.
+                    Поэтому отразить в прайсе все возможные комбинации (несколько десятков тысяч) невозможно.</p>
+                <p class="article__content-text">Чтобы понять точную стоимость восстановления данных, необходимо точно
+                    определить неисправность накопителя. Обычно, сам пользователь может сказать, что диск перестал
+                    работать. А что именно там сломалось невозможно определить без проведения профессиональной
+                    диагностики. Соответственно, без этого невозможно сказать, сколько точно будет стоить
+                    восстановление. Симптомы многих неисправностей очень схожи или одинаковы, а трудоёмкость работ по
+                    ним совершенно разная.</p>
+            </article>
+            <div class="article__content article__content--small">
+                <h3 class="article__content-title">Чтобы узнать точную стоимость восстановления данных обратитесь к
+                    нам:</h3>
+                <ul class="article__content-list">
+                    <li class="style-square">Позвоните по бесплатному номеру: <a href="tel:+4908004090908"
+                                                                                 class="tel">+49 (0) 800 409 09 08</a>
+                    </li>
+                    <li class="style-square">Заполните <a href="#">форму</a> на сайте</li>
+                </ul>
+                <p class="article__content-text">Ответим на все ваши вопросы, договоримся о проведении диагностики</p>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('templates/banner.ejs') %>
+<%- include('templates/faq.ejs') %>
+<%- include('templates/footer.ejs') %>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

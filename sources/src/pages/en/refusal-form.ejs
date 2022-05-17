@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DRK</title>
+    <link type="image/png" rel="icon" href="../../image/icon/favicon.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<%- include('templates/header.ejs') %>
+<div class="bread-crumbs container">
+    <span>Главная</span>
+    <span>Бланк отказа</span>
+</div>
+<section class="article">
+    <div class="container">
+        <h2 class="article__title no-print">Бланк отказа</h2>
+        <p class="article__content-text transition-link no-print"><a href="#" id="btnPrint">print-version</a></p>
+        <p class="article__content-text no-print">Если вы хотите отозвать договор, пожалуйста, заполните эту форму и отправьте ее
+            обратно</p>
+        <p class="article__content-text">Кому: Сервис восстановления данных</p>
+        <p class="article__content-text">Управляющий директор: Дипломированный инженер (FH) С. Мишель</p>
+        <p class="article__content-text">E-mail: <a href="mailto:info@datenrettungsklinik.de"
+                                                    class="email"><b>info@datenrettungsklinik.de</b></a>
+        </p>
+        <p class="article__content-text"><b>www.datenrettungsklinik.de</b></p>
+        <p class="article__content-text">Адрес: Habsburger Straße 125, D79104 Freiburg im Breisgau– Deutschland</p>
+        <p class="article__content-text">Телефон: <a href="tel:+4908004090908" class="tel">+49 (0) 800 409 09
+                08</a></p>
+        <p class="article__content-text">Факс: +49 761 290 864 31</p>
+        <p class="article__content-text">Я/мы (* ) настоящим отзываю договор, заключенный мной/нами (* ) на
+            оказание следующей услуги (* )</p>
+        <p class="article__content-text"><span class="text-line"></span></p>
+        <p class="article__content-text text-line__wrapper"><span>Заказан (* )/получен (* )</span><span class="text-afterLine"></span></p>
+        <p class="article__content-text text-line__wrapper"><span>Имя потребителя(ей):</span><span class="text-afterLine"></span></p>
+        <p class="article__content-text text-line__wrapper"><span>Адрес потребителя(ей):</span><span class="text-afterLine"></span></p>
+        <p class="article__content-text text-line__wrapper"><span></span><span class="text-afterLine"></span></p>
+        <p class="article__content-text text-line__wrapper"><span class="text-overLine">Дата</span><span class="text-overLine">Подпись потребителя(ей)</span></p>
+        <p class="article__content-text">( * ) Зачеркнуть неприменимое.</p>
+    </div>
+</section>
+<%- include('templates/footer.ejs') %>
+<script>
+    let printBTN = document.querySelector('#btnPrint')
+    if(printBTN) printBTN.addEventListener('click', ()=> window.print())
+</script>
+</body>
+</html>

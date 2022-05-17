@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DRK</title>
+    <link type="image/png" rel="icon" href="../../image/icon/favicon.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<%- include('templates/header.ejs') %>
+<div class="bread-crumbs container">
+    <span>Главная</span>
+    <span>Восстановление данных cетевого хранилища (NAS)</span>
+    <span>Восстановление данных NAS Synology</span>
+</div>
+<section class="article">
+    <div class="container">
+        <h2 class="article__title">Восстановление данных NAS Synology</h2>
+        <div class="article__wrapper article__wrapper--revers">
+            <article class="article__content article__content--big">
+                <p class="article__content-text">Synology — бесспорный лидер индустрии NAS оборудования. Поэтому нас
+                    совсем не удивляет то, что серверы этого бренда чаще других попадают к нам на восстановление данных,
+                    ведь NAS серверами Synology пользуются чаще. Причина этому - высокотехнологичные разработки в
+                    области сетевого хранения, эстетичность дизайна, а также низкое электропотребление и эргономичность
+                    этих устройств. Для эффективного восстановления данных с NAS серверов Synology важно знать не только
+                    принципы их работы, но и учитывать построение архитектуры собственного ПО Synology, которое создает
+                    свою файловую структуру. Мастера DRK Company имеют большой опыт восстановления данных с NAS серверов
+                    Synology.
+                </p>
+            </article>
+            <div class="article__content article__content--small">
+                <div class="article__img article__img--small">
+                    <picture>
+                        <source srcset="../../image/gallery/nas-synology.webp 1x, ../../image/gallery/nas-synology-2x.webp 2x"
+                                type="image/webp">
+                        <source srcset="../../image/gallery/nas-synology.jpg 1x, ../../image/gallery/nas-synology-2x.jpg 2x"
+                                type="image/jpg">
+                        <img src="../../image/gallery/nas-synology.jpg"
+                             srcset="../../image/gallery/nas-synology-2x.jpg 2x" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="about__success about__success-row">
+            <div class="about__success-inner">
+                <p class="about__success-number">98%</p>
+                <p class="about__success-text">Успешных случаев восстановления данных</p>
+            </div>
+            <div class="about__success-inner">
+                <p class="about__success-number"><span>более </span>15<span> лет</span></p>
+                <p class="about__success-text">Опыт специалистов в сфере восстановления данных </p>
+            </div>
+            <div class="about__success-inner">
+                <p class="about__success-number"><span>более</span>2000</p>
+                <p class="about__success-text">Количество дисков-доноров в базе DRK Company</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="article">
+    <div class="container">
+        <h2 class="article__title">Распространенные неисправности Raid массивов</h2>
+        <div class="article__wrapper  ">
+            <h3 class="article__content-title">Поломка контроллера RAID-массива</h3>
+            <article class="article__content article__content--big">
+                <p class="article__content-text">Неполадки в управляющем устройстве часто становятся причиной разрушения
+                    RAID массивов. Замена контролёра не всегда восстанавливает конфигурацию. Из-за этого RAID не
+                    идентифицируется операционной системой или не распознаются отдельно взятые диски.
+                </p>
+            </article>
+            <div class="article__content article__content--small">
+                <ul class="article__content-list">
+                    <li class="style-square style-square--top">Один или более дисков не инициализируются</li>
+                    <li class="style-square style-square--top">Диски находятся в состоянии downgrade</li>
+                    <li class="style-square style-square--top">Массив не монтируется</li>
+                </ul>
+            </div>
+        </div>
+        <div class="article__wrapper  ">
+            <h3 class="article__content-title">Логические повреждения или несанкционированное
+                форматирование/удаление</h3>
+            <article class="article__content article__content--big">
+                <p class="article__content-text">Наиболее распространённые причины сбоев в структуре файлов —
+                    программные неполадки, вирусы и ошибки при резервном копировании. Сам массив из строя не выходит,
+                    контроллер работает исправно. Если ситуация не сопряжена с каким-либо другим сбоем и диски видны
+                    системой и контроллером в том качестве, в каком и должны, есть большая вероятность вернуть
+                    информацию. При условии, разумеется, что не имела место повторная запись на винчестер («поверх»).
+                </p>
+            </article>
+            <div class="article__content article__content--small">
+                <ul class="article__content-list">
+                    <li class="style-square style-square--top">Операционная система не определяет массив</li>
+                    <li class="style-square style-square--top">Отсутствует доступ к логическим дискам, файлам и папкам
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="article__wrapper  ">
+            <h3 class="article__content-title">Отказ одного или нескольких жестких дисков</h3>
+            <article class="article__content article__content--big">
+                <p class="article__content-text">Во время отказа одного или нескольких жестких дисков RAID-массив
+                    определяется как единый диск, либо как неформатированный диск. В ряде конфигураций неисправность
+                    единственного жесткого диска разрушает массив. В системах с более высокой степенью
+                    отказоустойчивости это не всегда является критичным (для RAID-массивов 1-й и 5-й конфигурации). В
+                    этом случае система предложит произвести замену неисправного диска и пересобрать его, но это не дает
+                    100% гарантии успешного восстановления работы массива и сохранности данных.
+                </p>
+            </article>
+            <div class="article__content article__content--small">
+                <ul class="article__content-list">
+                    <li class="style-square style-square--top">Raid-массив определяется как единый диск</li>
+                    <li class="style-square style-square--top">Raid-массив определяется как неформатированный диск</li>
+                </ul>
+            </div>
+        </div>
+        <div class="article__wrapper  ">
+            <h3 class="article__content-title">Разрушение RAID-массива</h3>
+            <article class="article__content article__content--big">
+                <p class="article__content-text">Разрушение массива происходит, когда контроллер утрачивает сведения о
+                    конфигурации RAID. Выход из строя RAID-контроллера однозначно ведет к разрушению массива.
+                    Подключение дисков к другому, даже идентичному, контроллеру и попытка инициализировать их далеко не
+                    всегда приводят к успеху. Тем более найти точно такой же контроллер, выпущенный несколько лет назад,
+                    бывает проблематично. Поэтому в большинстве случаев разумной тактикой становится извлечение данных
+                    из разрушенного массива программными методами.
+                </p>
+            </article>
+            <div class="article__content article__content--small">
+                <ul class="article__content-list">
+                    <li class="style-square style-square--top">Диски не распознаются или начинают отображаться
+                        хаотично
+                    </li>
+                    <li class="style-square style-square--top">Накопители идентифицируются как неформатированные или
+                        устройства с неизвестной файловой системой
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="article">
+    <div class="container">
+        <h2 class="article__title">Что делать при сбое работы NAS сервера Synology?</h2>
+        <div class="article__wrapper  ">
+            <article class="article__content article__content--big">
+                <p class="article__content-text">Что бы ни послужило причиной поломки, ни в коем случае не стоит
+                    использовать функции, предусмотренной устройством. И «Rebuild», и «Restore», в некоторых случаях,
+                    когда накопитель полностью исправен, могут привести массив в рабоее состояние, однако данные будут
+                    потеряны. Самым разумным будет привести устройство на диагностику в DRK Company.
+                    В начале работы с сетевым накопителем специалисты проводят диагностику, которая позволяет тщательно
+                    изучить и протестировать все системы устройства, выявить неполадки и их источники. В соответствии с
+                    полученной информацией продумывается план дальнейших работ.
+                </p>
+            </article>
+            <div class="article__content article__content--small">
+                <h3 class="article__content-title article__content-title--stretch">Чтобы успешно вернуть данные, при
+                    любом сбое NAS Synology, обращайтесь к нам.</h3>
+                <p class="article__content-text">Проконсультироваться у специалистов по восстановлению данных DRK
+                    Company можно позвонив по бесплатному телефону: <a href="tel:+4908004090908" class="top">+49 (0) 800 409 09 08</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<%- include('templates/banner.ejs') %>
+<%- include('templates/faq.ejs') %>
+<%- include('templates/footer.ejs') %>
+</body>
+</html>

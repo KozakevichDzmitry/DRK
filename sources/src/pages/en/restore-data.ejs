@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DRK</title>
+    <link type="image/png" rel="icon" href="../../image/icon/favicon.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<%- include('templates/header.ejs') %>
+<div class="bread-crumbs container">
+    <span>Главная</span>
+    <span>Восстановить данные</span>
+</div>
+<section class="article">
+    <div class="container">
+        <h2 class="article__title">Форма заказа на восстановление данных</h2>
+        <div class="article__wrapper  ">
+            <article class="article__content article__content--big">
+                <p class="article__content-text">Уважаемые клиенты!<br> Чтобы ускорить процесс обработки заявок и
+                    сэкномить время, пожалуйста,
+                    заполните форму ниже. Если мы получим достоверные ответы на все вопросы, это ускорит организацию
+                    всех процессов и поможет сразу создать правильную рабочую среду.
+                </p>
+                <p class="article__content-text">
+                    Подписывая и отправляя эту форму, вы ничем не рискуете. Диагностику мы проведем бесплатно, даже если
+                    вы не воспользуетесь услугой восстановления данных. Если мы не сможем вам помочь, вы получите
+                    обратно свой носитель бесплатно.
+                </p>
+            </article>
+            <div class="article__content article__content--small">
+                <ol class="list--margin">
+                    <li>Заполните форму;</li>
+                    <li>Тщательно упакуйте носитель данных;</li>
+                    <li>Отправьте носитель в DRK Company;</li>
+                    <li>После диагностики мы направим вам предложение по восстановлению данных, в котором укажем виды
+                        работ, стоимость и сроки. Только в случае вашего согласия мы начинаем восстанавление данных.
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <form class="form-extended" id="extendedForm">
+            <div class="form__wrapper">
+                <div class="form__item form__item--small">
+                    <label class="form__subtitle-input" for="serviceType">Тип услуги / Срочность</label>
+                    <select name="service-type" id="serviceType" data-type="selected">
+                        <option value="none" selected disabled>Выберите услугу*</option>
+                        <option value="emergency-help">Экстренная помощь</option>
+                        <option value="express-recovery">Экспресс-восстановление</option>
+                        <option value="standard">Стандартное восстановление данных</option>
+                    </select>
+                </div>
+                <div class="form__item form__item--small">
+                    <label class="form__subtitle-input" for="clientType">Вы обращаетесь как</label>
+                    <select name="client-type" id="clientType" data-profile='none' data-type="selected">
+                        <option value="none" selected disabled>Частное лицо*</option>
+                        <option value="private">Частное лицо</option>
+                        <option value="firma">Компания</option>
+                    </select>
+                </div>
+                <div class="form__item form__item--small flex-end hidden" data-hidden="true">
+                    <input name="nameCompany" class="hidden" type="text" id="nameCompany"  data-firm="true" data-type="name"
+                           placeholder="Наименование компании*" disabled>
+                </div>
+            </div>
+            <h3 class="form__subtitle">Клиент</h3>
+            <div class="form__wrapper">
+                <div class="form__item form__item--small">
+                    <input name="clientName" type="text" id="clientName" data-type="name" placeholder="Имя*">
+                </div>
+                <div class="form__item form__item--small">
+                    <input name="clientSurname" type="text" id="clientSurname" data-type="name" placeholder="Фамилия*">
+                </div>
+                <div class="form__item form__item--small hidden" data-hidden="true">
+                    <input name="clientPosition" class="hidden" type="text" id="clientPosition" data-firm="true" data-type="name"
+                           placeholder="Должность*" disabled>
+                </div>
+            </div>
+            <div class="form__wrapper">
+                <div class="form__item form__item--small">
+                    <input name="address-street" type="text" id="street" data-type="text" placeholder="Улица, номер дома*">
+                </div>
+                <div class="form__item form__item--small">
+                    <input name="address-city" type="text" id="city" data-type="text" placeholder="Почтовый индекс / Город*">
+                </div>
+                <div class="form__item form__item--small">
+                    <input name="address-country" type="text" id="country" data-type="text" placeholder="Страна*">
+                </div>
+                <div class="form__item form__item--small">
+                    <input name="client-phone" type="text" id="phoneNumber" data-type="phone" placeholder="Телефонный номер*">
+                </div>
+                <div class="form__item form__item--small">
+                    <input name="client-email" type="text" id="clientEmail" data-type="email" placeholder="E-Mail*">
+                </div>
+                <div class="form__item form__item--small">
+                    <select name="communication" id="communication" data-type="selected">
+                        <option value="none" selected disabled>Удобный способ связи*</option>
+                        <option value="phone">Звонок по телефону</option>
+                        <option value="email">Электронная почта</option>
+                        <option value="whatsApp">Whats app</option>
+                    </select>
+                </div>
+            </div>
+            <h3 class="form__subtitle">Информация о носителе информации</h3>
+            <p class="form__info-text form__info-text--small">Введите следующую информацию обо всех носителях
+                информации, которые вы хотите отправить нам. Абсолютно
+                необходимо указывать все серийные номера! Серийный номер почти всегда начинается с S/N. Спросите нас,
+                если вы не можете найти серийный номер. Маркируйте место для хранения и аксессуары.</p>
+            <div class="form__wrapper">
+                <div class="form__item form__item--medium">
+                    <select name="typeOfStorage" id="typeOfStorage" data-type="selected">
+                        <option class="select-placeholder" value="none" selected disabled>Тип носителя данных*</option>
+                        <option value="HDD">Hard Disk Drive (HDD)</option>
+                        <option value="SSD">Solid State Drive (SSD)</option>
+                        <option value="ExternalHardDrive">External hard drive</option>
+                        <option value="FlashMemory">Flash memory</option>
+                        <option value="USB">USB stick</option>
+                        <option value="SD">SD card</option>
+                        <option value="Notebook">Notebook/Laptop</option>
+                        <option value="Virtual">Virtual systems</option>
+                        <option value="Raid">Raid</option>
+                        <option value="NAS">Network Attached Storage (NAS)</option>
+                        <option value="Server">Server</option>
+                        <option value="SAN">Storage Area Network (SAN)</option>
+                        <option value="other">other...</option>
+                    </select>
+                </div>
+                <div class="form__item form__item--medium">
+                    <input name="manufacturer" type="text" id="manufacturer" data-type="text" placeholder="Производитель*">
+                </div>
+                <div class="form__item form__item--medium">
+                    <input name="model" type="text" id="model" data-type="text" placeholder="Модель*">
+                </div>
+                <div class="form__item form__item--medium">
+                    <input name="mediaSize" type="text" id="mediaSize" data-type="text" placeholder="Емкость носителя*">
+                </div>
+            </div>
+            <p class="form__info-text form__info-text--small">Серийный номер (S/N) и модель носителя информации,
+                который содержит ваши недостающие данные: Одна форма заказа на жесткий диск!</p>
+            <div class="form__wrapper">
+                <div class="form__item form__item--medium">
+                    <textarea id="bugDescription" data-type="text" name="bugDescription"
+                              placeholder="Опишите, что произошло с вашим носителем и как вы заметили ошибку?*"></textarea>
+                </div>
+                <div class="form__item form__item--medium">
+                    <textarea id="bugFixDescription" data-type="text" name="bugFixDescription"
+                              placeholder="Какие действия уже были предприняты для устранения проблемы?*"></textarea>
+                </div>
+            </div>
+            <div class="form__wrapper">
+                <p class="form__info-text form__info-text--small">
+                    В любом случае прочитанные вами данные будут перенесены на новый носитель информации. Обычно это
+                    внешние жесткие диски USB3. Пожалуйста, не прилагайте никаких собственных запасных носителей
+                    информации.
+                </p>
+            </div>
+            <h3 class="form__subtitle">Доставка носителя</h3>
+            <div class="form__wrapper">
+                <div class="form__item form__item--small">
+                    <select name="deliveryMethod" id="deliveryMethod" data-delivery="method" data-type="selected">
+                        <option class="select-placeholder" value="none" selected disabled>Способ доставки носителя*
+                        </option>
+                        <option value="bringYourself">Я принесу носитель информации Вам лично</option>
+                        <option value="package">Я посылаю пакет</option>
+                        <option value="inviteMaster" class="hidden" data-firm="true">Нужен выезд мастера на
+                            предприятие
+                        </option>
+                    </select>
+                </div>
+                <div class="form__item  form__item-flex-row">
+                    <p class="form__info-text form__info-text--small">Что вы кладете в посылку?*</p>
+                    <div class="form__item-content form__item-content--column" data-type="groupMarked">
+                        <label><input name="package-storageMedium" type="checkbox" class="packageContents" data-delivery-item="package"
+                                      id="storageMedium" disabled>Носитель для чтения</label>
+                        <label><input name="package-housing" type="checkbox" class="packageContents" data-delivery-item="package" id="housing"
+                                      disabled>Корпус</label>
+                        <label><input name="package-powerAdapter" type="checkbox" class="packageContents" data-delivery-item="package"
+                                      id="powerAdapter" disabled>Зарядное устройство
+                        </label>
+                        <label><input name="package-USB-cable" type="checkbox" class="packageContents" data-delivery-item="package"
+                                      id="USB-cable" disabled>USB-кабель</label>
+                        <label><input name="package-other" type="checkbox" class="packageContents" data-delivery-item="package" id="other"
+                                      data-delivery="method" value="packageContentTextarea" disabled>Другое</label>
+                    </div>
+                    <div class="form__item-content"><textarea name="otherPackage" class="minTextarea" id="packageContentTextarea"
+                                                              data-type="text"
+                                                              data-delivery-item="packageContentTextarea"
+                                                              placeholder="Укажите что*" disabled></textarea></div>
+                </div>
+            </div>
+            <div class="form__info">
+                <p class="form__info-text">Я прочитал информацию о восстановлении данных и информацию о ценах и
+                    ознакомился с процессом восстановления данных. Я знаю, что не беру на себя никаких рисков и заплачу
+                    только после того, как мои данные будут успешно прочитаны, и что в настоящее время ожидается более
+                    длительное время обработки. Я знаю, что ремонт неисправного жесткого диска занимает много времени, а
+                    для сохранения данных часто требуются запчасти и очень дорогое оборудование. Конечно, я
+                    заинтересован в восстановлении моих данных. Я назвал особо важные файлы. Вся информация, включая
+                    письменные или устные договоренности, вносилась в форму только с клавиатуры. Я указал особо важные
+                    файлы и каталоги. Я отправлю или привезу память данных только в ЗАСТРАХОВАННОМ ПАКЕТЕ.</p>
+                <div class="form__item-content form__item-content--fullWidth">
+                    <label><input type="checkbox" data-type="marked" class="packageContents" id="acceptPolicy">Пожалуйста,
+                        подтвердите, что вы ознакомились с условиями
+                        клиники восстановления данных и информацией о восстановлении данных.</label>
+                    <label><input type="checkbox" data-type="marked" class="packageContents" id="acceptCookie">Заявление
+                        о согласии на сбор/передачу персональных данных
+                        в соответствии с Европейским общим регламентом по защите данных (далее – GDPR)</label>
+                </div>
+                <p class="form__info-text">
+                    Я даю согласие на сбор и обработку моих персональных данных клиникой спасения данных. Мне дали
+                    информационный лист о защите данных, по которому я также мог задать вопросы:</p>
+                <ul class="article__content-list">
+                    <li>- об объеме и характере моих данных</li>
+                    <li>- о правовых основах обработки</li>
+                    <li>- о возможностях подачи возражения и о последствиях этого</li>
+                </ul>
+                <p class="form__info-text"> Мне известно, что я могу отозвать это заявление полностью или частично в
+                    любое время в будущем. Я
+                    проинформирован о последствиях отзыва.
+                </p>
+            </div>
+            <input class="btn btn--inline" type="submit" value="Отправить форму">
+        </form>
+    </div>
+</section>
+<%- include('templates/footer.ejs') %>
+</body>
+</html>
+

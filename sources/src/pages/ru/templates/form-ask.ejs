@@ -1,0 +1,28 @@
+<section class="form form-ask">
+    <div class="container">
+        <h2 class="form-title">Задать свой вопрос</h2>
+        <form class="form-ask" id="askForm">
+            <div class="form__wrapper">
+                <div class="form__item form__item--big">
+                    <label class="form__subtitle-input" for="textarea">Ваш вопрос</label>
+                    <textarea id="textarea" data-type="text" name="client-question"></textarea>
+                </div>
+            </div>
+            <div class="form__wrapper">
+                <div class="form__item form__item--medium">
+                    <label class="form__subtitle-input" for="emailTextareaAsk">Ваш E-mail</label>
+                    <input type="email" data-type="email" id="emailTextareaAsk" name="client-email">
+                </div>
+                <div class="form__item form__item--medium">
+                    <label class="form__subtitle-input" for="client-name">Как вас зовут?</label>
+                    <input type="text" data-type="name" id="client-name" name="client-name">
+                </div>
+                <label class="form__input-privacy">
+                    <input class="input-privacy" data-type="marked" id="privacy" type="checkbox" name="privacy">
+                    <p>Я согласен с политикой конфиденциальности.</p>
+                </label>
+            </div>
+            <input class="btn btn--inline" type="submit" value="Отправить">
+        </form>
+    </div>
+</section>
