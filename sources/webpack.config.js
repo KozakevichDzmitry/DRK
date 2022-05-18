@@ -141,7 +141,7 @@ module.exports = {
         optimization: optimization(),
         devServer: {
             port: 8080,
-            hot: false,
+            hot: isDev,
         },
         devtool: isDev ? 'source-map' : false,
         plugins: plugins(),
@@ -157,7 +157,7 @@ module.exports = {
                 },
                 {
                     test: /\.css$/,
-                    use: ['css-loader']
+                    use: cssLoaders()
                 },
                 {
                     test: /\.less$/,

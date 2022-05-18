@@ -1,12 +1,14 @@
 import './style/style.scss';
-import Swiper, {Navigation, Pagination} from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
+// import Swiper and modules styles
 import 'swiper/css';
 import {Form} from './form';
 
 
-
 import {BlogMarks} from './blogMarks'
 import {logPlugin} from "@babel/preset-env/lib/debug";
+
+
 
 const swiper = new Swiper(".swiper", {
     modules: [Navigation, Pagination],
@@ -15,10 +17,11 @@ const swiper = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
 const brandSwiper = new Swiper(".brand__swiper", {
     modules: [Navigation, Pagination],
-    slidesPerView: 1,
-    spaceBetween: 10,
+    //slidesPerView: 1,
+    //spaceBetween: 10,
     navigation: {
         nextEl: ".brand__swiper-button-next",
         prevEl: ".brand__swiper-button-prev",

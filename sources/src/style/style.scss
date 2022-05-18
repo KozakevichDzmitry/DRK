@@ -1,6 +1,5 @@
-//@import '../fonts/stylesheet.css';
+@import '../fonts/stylesheet.css';
 @import "normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 $font-color-basic: #000000;
 $font-color-link: #ffffff;
@@ -1223,6 +1222,14 @@ ol.article__content-list {
   border: none;
   border-right: 1.06em solid transparent;
   box-shadow: 0 0 0 1px #D0D0D0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  background-image: url('../image/icon/arrow-down.svg'), linear-gradient(to bottom, #ffffff 0%,transparent 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
 
   option {
     font-family: $font-Roboto;
@@ -1241,7 +1248,12 @@ ol.article__content-list {
 }
 
 .form__input--invalid, .form__input--invalid:focus {
-  background: rgb(255, 210, 210);
+  background-color: rgb(255, 210, 210);
+
+  &.form__select{
+    background-color: #fff;
+    background-image: url('../image/icon/arrow-down.svg'), linear-gradient(to bottom, #ffd2d2 0%, #efa6a6fc 100%);
+  }
 
   &[type="checkbox"]:after {
     content: "";
@@ -1249,7 +1261,12 @@ ol.article__content-list {
     display: block;
     width: 100%;
     height: 100%;
-    border: 1px solid rgb(255, 210, 210);
+    background-image: linear-gradient(to bottom, #ffd2d2 0%, #efa6a6fc 100%);
+    border: 1px solid #767676;
+  }
+  &[type="checkbox"]:checked:after {
+    content: "";
+    display: none;
   }
 }
 
@@ -1336,10 +1353,24 @@ ol.article__content-list {
     letter-spacing: 0.03em;
     color: $font-color-basic;
   }
-
+  select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background-image: url('../image/icon/arrow-down.svg'), linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+  }
   option:first-child {
     display: none;
   }
+}
+
+select.form__input--invalid, select.form__input--invalid:focus{
+  background-color: #fff;
+  background-image: url('../image/icon/arrow-down.svg'), linear-gradient(to bottom, #ffd2d2 0%, #efa6a6fc 100%);
 }
 
 .form__item.hidden {
