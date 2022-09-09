@@ -172,7 +172,7 @@ export class Form {
                     this.showMessage('Форма успешно отправлена. Мы ответим вам в ближайшее время.')
                     this.formBody.reset()
                 } else {
-                    return response.json().then( error =>{
+                    return response.json().then(error => {
                         const e = new Error('Возникла непредвиденная ошибка. Попробуйте отправить форму еще раз.')
                         e.data = error
                         throw e
@@ -248,3 +248,5 @@ export class Form {
 
     }
 }
+
+
