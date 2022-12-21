@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Nodemailer.iml" filepath="$PROJECT_DIR$/.idea/Nodemailer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DRK.iml" filepath="$PROJECT_DIR$/.idea/DRK.iml" />
     </modules>
   </component>
 </project>
